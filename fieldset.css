@@ -1,0 +1,35 @@
+#productInfo{
+  width: 50px;
+  border:none;
+  border-right-width: thin;
+  border-right-color: lightgray;
+  border-right-style: solid;
+}
+fieldset legend{
+  color:red;
+  font-size: larger;
+}
+fieldset label{
+  margin-top: 5px;
+  color: lightgray;
+}
+fieldset input{
+  border:none;
+  border-bottom-style: dashed;
+  border-bottom-width: thin;
+  border-color: lightskyblue;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+fieldset #operator{
+  float: left;
+  background-color: inherit;
+}
+fieldset button{
+  width: auto;
+  font-size: large;
+  background-color: inherit;
+  border: none;
+  margin-top: 30px;
+  color:lightblue;
+}

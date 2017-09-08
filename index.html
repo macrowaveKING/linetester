@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>LineTester2</title>
+    <script src="global.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="table.css">
+    <script src="index.js"></script>
+    <script src="print.js" charset="utf-8"></script>
+    <script src="db.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+  <div class="unprintable">
+
+
+    <fieldset class="configure">
+      <legend>产品信息</legend>
+      <label for="supplier">供应商</label>
+      <select class="" name="supplier">
+        <option value="4">乐清金泰</option>
+
+      </select>
+      <label for="specification">规格</label>
+      <select class="" name="specification" onchange="setCellValue(this)">
+        <option value="1">20-A2</option>
+        <option value="1">20-A5-01</option>
+        <option value="1">20-A3</option>
+        <option value="2">22-B</option>
+        <option value="3">26-Bb</option>
+        <option value="1">20-A8</option>
+      </select>
+      <label for="recipe">配方</label>
+      <select class="" name="recipe" onchange="setCellValue(this)">
+        <option value="1">HFG-22</option>
+        <option value="1">SB-03-7</option>
+        <option value="1">220</option>
+        <option value="1">D2</option>
+        <option value="2">225</option>
+        <option value="1">RP101</option>
+        <option value="2">RZ301</option>
+        <option value="1">FM488</option>
+        <option value="1">SB02</option>
+        <option value="1">YC023C</option>
+      </select>
+      <label for="brand">生胶牌号</label>
+      <select class="" name="brand" onchange="setCellValue(this);">
+        <option value="1">2211</option>
+        <option value="2">2030</option>
+        <option value="3">EXXON1066</option>
+      </select>
+      <label for="grade">硫化等级</label>
+      <select class="" name="grade" onchange="setCellValue(this)">
+        <option value="1">III</option>
+        <option value="1">1/2A</option>
+        <option value="2">1/3A</option>
+        <option value="3">1/4A</option>
+        <option value="4">A级</option>
+        <option value="5">2ml/万只</option>
+        <option value="6">3ml/万只</option>
+        <option value="7">4ml/万只</option>
+        <option value="8">5ml/1.5万只</option>
+        <option value="9">6ml/2万只</option>
+        <option value="0">1ml/万只</option>
+      </select>
+
+      <label for="category">类别</label>
+      <select class="" name="category" onchange="setCellValue(this)">
+        <option value="D">丁基胶塞</option>
+      </select>
+
+      <label for="batchNo">
+        批号
+      </label>
+      <input type="text" name="batchNo" value="1234567890" onchange="setCellValue(this)">
+      <label for="quantity">数量</label>
+      <input type="text" name="quantity" value="1234" onchange="setCellValue(this)">
+      <label for="weight">净重</label>
+      <input type="text" name="weight" value="2345.7">
+      <label for="printers">打印机</label>
+      <select class="" name="printers" id="printers">
+
+      </select>
+      <label for="scanner">扫描枪</label>
+      <select class="" name="scanner">
+
+      </select>
+      <label for="weighter">电子秤</label>
+      <select class="" name="weighter">
+
+      </select>
+    </fieldset>
+    <input type="button" name="" value="" onclick="Print.performPrint()">
+  </div>
+  <script src="device.js" charset="utf-8"></script>
+  <fieldset id="barcodeArea">
+    <legend class="unprintable">标签</legend>
+
+    <div class="printable">
+
+
+      <table class="" id="printable">
+
+      </table>
+      <script src="table.js"></script>
+
+      <script src="barcode.js"></script>
+    </div>
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+
+
+@media screen {
+  .printable{
+    float: left;
+    display: block;
+  }
+  .unprintable{
+
+    float: left;
+  }
+
+}
+
+table{
+  border-collapse: collapse;
+}
+#printable{
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
+#printable tr{
+  margin: 0px;
+  padding: 0px;
+}
+#printable td{
+  border: solid thin black;
+  margin: 0px;
+
+}
+label{
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 10pt;
+  color: darkgray;
+}
+select{
+  width: 100px;
+}
+input{
+  width: 100px
+}
+fieldset{
+  width: 150px;
+  border-radius: 8px;
+  border-color: darkgray;
+}
+legend{
+  color: lightblue;
+}
+
+.caption{
+
+  //display: block;
+  color: blue;
+  width: 70px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align:center;
+  text-align:justify;
+  text-justify:distribute-all-lines;
+  text-align-last:justify
+
+
+}
+.placeWhole{
+
+}
+.plain{
+  //display: inline;
+  padding-left: 5px;
+  width: 70px;
+}
+#printable svg{
+  padding-left:0px;
+  display: block;
+  margin:auto auto;
+}
+
+@media print {
+  .printable{
+    float: left;
+    display: block;
+  }
+  .unprintable{
+    display: none;
+  }
+  #barcodeArea{
+    border-width: 0px;
+  }
+}
